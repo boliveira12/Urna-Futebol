@@ -14,10 +14,11 @@
   }
   .cinzaEscuro{
     top: 50%;
-    margin-top: -200px;
-    width: 250px;
+    margin-top: -190px;
+    width: 275px;
     height: 60px;
-    right: 20px;
+    right: 542px;
+    border: solid 1px black;
     position: absolute;
   }
   b{
@@ -25,14 +26,14 @@
     top: 10px;
   }
   .preto{
-    border: solid 2px;
-    top: 50%;
-    margin-top: -135px;
     position: absolute;
+    border: solid 1px;
+    top: 50%;
+    margin-top: -128px;
     background-color: #444;
-    height: 300px;
-    width: 250px;
-    right: 20px;
+    height: 288px;
+    width: 275px;
+    right: 542px;
   }
   .cinzaClaro{
     position: absolute;
@@ -41,7 +42,6 @@
     margin-left: -370px;
     top: 50%;
     margin-top: -190px;
-    position: absolute;
     height: 350px;
     width: 500px;
     background-color: snow;
@@ -59,22 +59,24 @@
   }
   .teclado2{
     font-size: 11px;
-    position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 5px;
     color: black;
   }
-  .branco{
+  .white{
     height: 40px;
-    width: 75px;
+    width: 85px;
+    border: solid 1px;
   }
   .laranja{
     height: 40px;
-    width: 75px;
+    width: 85px;
     background-color: #E67401;
+    border: solid 1px;
   }
   .verde{
-    height: 50px;
-    width: 75px;
+    height: 40px;
+    width: 85px;
     background-color: green;
+    border: solid 1px;
   }

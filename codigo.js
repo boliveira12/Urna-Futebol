@@ -14,20 +14,24 @@ function corrige() {
     document.getElementById("campo2").value = "";
 }
 
-
-function votar() {
-
+function foto(){
     var valor1 = parseInt(document.getElementById("campo1").value);
     var valor2 = parseInt(document.getElementById("campo2").value);
-    var candidado = (valor1 * 10) + valor2;
-    if (sessionStorage.getItem(candidado) !== null) {
-        votos = parseInt(sessionStorage.getItem(candidado)) + 1;
-        sessionStorage.setItem(candidado, votos);
+    
+}
+
+function votar() {
+    var valor1 = parseInt(document.getElementById("campo1").value);
+    var valor2 = parseInt(document.getElementById("campo2").value);
+    var candidato = (valor1 * 10) + valor2;
+    if (sessionStorage.getItem(candidato) !== null) {
+        votos = parseInt(sessionStorage.getItem(candidato)) + 1;
+        sessionStorage.setItem(candidato, votos);
     } else {
-        sessionStorage.setItem(candidado, 1);
+        sessionStorage.setItem(candidato, 1);
         
     }
-    alert("Confirmado voto no candidato "+candidado)
+    alert("Confirmado voto no candidato "+candidato)
     document.getElementById("campo1").value = "";
     document.getElementById("campo2").value = "";
 }
@@ -36,8 +40,7 @@ function resultado() {
     document.getElementById("resultado").innerHTML=""
     for(i=0;i<100;i++){
         if (sessionStorage.getItem(i) !== null) {
-            //alert(i);
-            document.getElementById("resultado").innerHTML += "Cantidado "+i+" tem "+sessionStorage.getItem(i)+" votos<br/>";
+            document.getElementById("resultado").innerHTML += "Candidato "+i+" tem "+sessionStorage.getItem(i)+" votos<br/>";
         }
     }
 }

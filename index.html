@@ -9,17 +9,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="index">
+            <h1>Candidatos:</h1>
+            <h3> 
+                Hakimi:02
+
+                Gakpo:08
+
+                Richarlison:09
+
+                Modric:10
+
+                Enner:13
+            </h3>
+        </div>
         <div class="container">
             <div class="branco">
                 <div class="cinzaClaro">
+                    <p class="info1">Nome: <span id="nome"></span></p>
+                    <p class="info2">País:<span id="pais"></span></p>
                     <p>Número:</p>
                     <form action="">
                         <input size="1" id="campo1" value="" maxlength="1" type="text" readonly="readonly"/>
                         <input size="1" id="campo2" value="" maxlength="1" type="text" readonly="readonly"/>
                     </form>
-                </div>
-                <div class="cinzaEscuro">
-                    <b>SELEÇÃO<br>BRASILEIRA</b> 
+                    <img src="cinza.jpg" alt="" class="jogador">
                 </div>
                 <div class="preto">
                     <button class="bnt click" onclick="inserir(1)">1</button>
@@ -32,15 +46,13 @@
                     <button class="bnt click" onclick="inserir(8)">8</button>
                     <button class="bnt click" onclick="inserir(9)">9</button>
                     <button class="bnt click" onclick="inserir(0)">0</button>
-                    <div class="teclado2">
-                        <button class="white  click">BRANCO</button>
+                    <div class="botao">
+                        <button class="white  click" onclick="branco()">BRANCO</button>
                         <button class="laranja  click" onclick="corrige()">CORRIGE</button>
                         <button class="verde" onclick="votar()">CONFIRMA</button>
                     </div>
                 </div>
             </div>
-            <a href="resultado.html">Resultado</a>
-        </div> 
-             
+        </div>  
     </body>
 </html>

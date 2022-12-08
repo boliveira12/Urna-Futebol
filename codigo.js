@@ -72,3 +72,8 @@ function votar() {
 function branco() {
     alert("Você votou em branco.");
 }
+
+
+function recarregarAPagina(){
+    window.location.reload();
+} 

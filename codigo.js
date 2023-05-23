@@ -16,7 +16,7 @@ function corrige() {
 
 
 function votar() {
-
+    
     var valor1 = parseInt(document.getElementById("campo1").value);
     var valor2 = parseInt(document.getElementById("campo2").value);
     var candidato = (valor1 * 10) + valor2;
